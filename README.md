@@ -41,6 +41,19 @@ npx skills add mo-waseem/skills \
 
 For non-interactive installation, add `--yes`.
 
+## Supported agents
+
+Skills in this repository can be installed for any of these agents:
+
+| Agent | `--agent` | Project path | Global path |
+| --- | --- | --- | --- |
+| Claude Code | `claude-code` | `.claude/skills/` | `~/.claude/skills/` |
+| OpenCode | `opencode` | `.agents/skills/` | `~/.config/opencode/skills/` |
+| Codex | `codex` | `.agents/skills/` | `~/.codex/skills/` |
+| Hermes Agent | `hermes-agent` | `.hermes/skills/` | `~/.hermes/skills/` |
+
+The `skills` CLI automatically detects installed agents. You can also target one or more agents explicitly with the `--agent` option.
+
 ## Use
 
 Explicit invocation varies by agent:
