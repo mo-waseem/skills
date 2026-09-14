@@ -1,0 +1,4 @@
+interface:
+  display_name: "RightArch"
+  short_description: "Choose the least architecture a project needs"
+  default_prompt: "Use $right-arch to assess this project and implement it with the minimum justified architecture."
