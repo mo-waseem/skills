@@ -4,7 +4,7 @@ Reusable skills for AI coding agents that follow the open Agent Skills format.
 
 ## Available skills
 
-### Minimum Sufficient Architecture
+### RightArch
 
 Helps an agent answer:
 
@@ -20,18 +20,18 @@ Install interactively and choose the target agents:
 npx skills add mo-waseem/skills
 ```
 
-Install only the Minimum Sufficient Architecture skill:
+Install only the RightArch skill:
 
 ```bash
 npx skills add mo-waseem/skills \
-  --skill minimum-sufficient-architecture
+  --skill right-arch
 ```
 
 Install it globally for Claude Code, OpenCode, Codex, and Hermes Agent:
 
 ```bash
 npx skills add mo-waseem/skills \
-  --skill minimum-sufficient-architecture \
+  --skill right-arch \
   --agent claude-code \
   --agent opencode \
   --agent codex \
@@ -46,16 +46,16 @@ For non-interactive installation, add `--yes`.
 Explicit invocation varies by agent:
 
 ```text
-Claude Code: /minimum-sufficient-architecture
-Codex:       $minimum-sufficient-architecture
-Hermes:      /minimum-sufficient-architecture
-OpenCode:    Use the minimum-sufficient-architecture skill.
+Claude Code: /right-arch
+Codex:       $right-arch
+Hermes:      /right-arch
+OpenCode:    Use the right-arch skill.
 ```
 
 Example request:
 
 ```text
-Use the minimum-sufficient-architecture skill to assess this project before implementing the feature.
+Use the right-arch skill to assess this project before implementing the feature.
 ```
 
 The skill can also be selected automatically when a request concerns software architecture, project structure, code simplification, or overengineering.
@@ -63,14 +63,14 @@ The skill can also be selected automatically when a request concerns software ar
 ## Update
 
 ```bash
-npx skills update minimum-sufficient-architecture
+npx skills update right-arch
 ```
 
 ## Repository structure
 
 ```text
 skills/
-└── minimum-sufficient-architecture/
+└── right-arch/
     ├── SKILL.md
     └── agents/
         └── openai.yaml
