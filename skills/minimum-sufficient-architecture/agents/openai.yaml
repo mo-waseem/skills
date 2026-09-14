@@ -1,4 +1,0 @@
-interface:
-  display_name: "Minimum Sufficient Architecture"
-  short_description: "Choose the least architecture a project needs"
-  default_prompt: "Use $minimum-sufficient-architecture to assess this project and implement it with the minimum justified architecture."
