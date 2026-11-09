@@ -14,7 +14,7 @@ It assesses project complexity, assigns an architecture budget, avoids premature
 
 ### not-alien
 
-Makes the agent reply in plain, simple English and keep replies short. It uses common words and short sentences, and drops preamble and closing filler. Code, commands, and error messages stay exact. It stays on for the session until you say "stop not-alien". See the [not-alien README](skills/not-alien/README.md) for before/after examples.
+Makes the agent reply in plain, simple English and keep replies short. It uses common words and short sentences, and drops preamble and closing filler. Code, commands, and error messages stay exact. It stays on for the session until you say "stop not-alien". See the [not-alien README](skills/not-alien/README.md) for before/after examples. It can also run always-on in Claude Code as a [plugin](claude-plugins/README.md).
 
 ## Install
 
@@ -51,6 +51,17 @@ npx skills add mo-waseem/skills \
 ```
 
 For non-interactive installation, add `--yes`.
+
+### Claude Code plugins
+
+Some skills also ship as Claude Code plugins, for features a plain skill can't have, like always-on mode:
+
+```bash
+claude plugin marketplace add mo-waseem/skills
+claude plugin install not-alien@mo-waseem-skills
+```
+
+See [claude-plugins/README.md](claude-plugins/README.md).
 
 ## Supported agents
 
@@ -94,6 +105,13 @@ npx skills update not-alien
 ## Repository structure
 
 ```text
+.claude-plugin/
+└── marketplace.json
+claude-plugins/
+└── not-alien/
+    ├── .claude-plugin/plugin.json
+    ├── hooks/
+    └── skills/not-alien/SKILL.md
 skills/
 ├── not-alien/
 │   ├── README.md

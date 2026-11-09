@@ -6,7 +6,15 @@ AI agents often write like aliens: long sentences, rare words, and polite filler
 
 ## Install
 
-Copy and paste this prompt into your AI agent:
+Copy and paste one of these prompts into your AI agent.
+
+**Claude Code, on in every session:**
+
+```text
+Install the not-alien plugin from https://github.com/mo-waseem/skills and turn on always-on mode. Run `claude plugin marketplace add mo-waseem/skills`, then `claude plugin install not-alien@mo-waseem-skills`, then `touch ~/.claude/.not-alien-always`. Tell me to restart Claude Code.
+```
+
+**Any agent, on demand:**
 
 ```text
 Install the not-alien skill from https://github.com/mo-waseem/skills. Run `npx skills add mo-waseem/skills --skill not-alien` for this agent, or copy the `skills/not-alien` folder into this agent's skills folder.
@@ -28,6 +36,33 @@ OpenCode:    Use the not-alien skill.
 ```
 
 It stays on for the rest of the session. Say "stop not-alien" or "normal mode" to turn it off.
+
+## Always-on (Claude Code)
+
+To start every session with not-alien already on, install it as a Claude Code plugin instead:
+
+```bash
+claude plugin marketplace add mo-waseem/skills
+claude plugin install not-alien@mo-waseem-skills
+```
+
+Then turn always-on on:
+
+```bash
+touch ~/.claude/.not-alien-always
+```
+
+Restart Claude Code. A hook now loads the rules at the start of every session.
+
+- Turn always-on off: `rm ~/.claude/.not-alien-always`
+- Turn it off for one session: say "stop not-alien"
+- `/not-alien` still works on demand when the flag file is not there
+
+If you installed with `npx` before, remove that copy so `/not-alien` isn't listed twice:
+
+```bash
+rm -rf ~/.claude/skills/not-alien
+```
 
 ## What changes
 
