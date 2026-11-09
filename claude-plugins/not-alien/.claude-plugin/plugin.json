@@ -1,7 +1,7 @@
 {
   "name": "not-alien",
-  "displayName": "not-alien",
-  "version": "0.1.0",
+  "displayName": "Not Alien",
+  "version": "0.1.1",
   "description": "Make Claude reply in plain, simple, short English. On demand with /not-alien, or always on with a flag file.",
   "author": {
     "name": "Waseem Kntar",
