@@ -14,7 +14,7 @@ It assesses project complexity, assigns an architecture budget, avoids premature
 
 ### not-alien
 
-Makes the agent reply in plain, simple English and keep replies short. It uses common words and short sentences, and drops preamble and closing filler. Code, commands, and error messages stay exact. It stays on for the session until you say "stop not-alien".
+Makes the agent reply in plain, simple English and keep replies short. It uses common words and short sentences, and drops preamble and closing filler. Code, commands, and error messages stay exact. It stays on for the session until you say "stop not-alien". See the [not-alien README](skills/not-alien/README.md) for before/after examples.
 
 ## Install
 
@@ -96,6 +96,7 @@ npx skills update not-alien
 ```text
 skills/
 ├── not-alien/
+│   ├── README.md
 │   ├── SKILL.md
 │   └── agents/
 │       └── openai.yaml
