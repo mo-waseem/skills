@@ -1,0 +1,4 @@
+interface:
+  display_name: "not-alien"
+  short_description: "Reply in plain, simple, short English"
+  default_prompt: "Use $not-alien and answer in plain, short English."

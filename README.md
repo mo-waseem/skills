@@ -12,6 +12,10 @@ Helps an agent answer:
 
 It assesses project complexity, assigns an architecture budget, avoids premature abstractions, and preserves necessary engineering quality such as testing, security, validation, transactions, and reliability.
 
+### not-alien
+
+Makes the agent reply in plain, simple English and keep replies short. It uses common words and short sentences, and drops preamble and closing filler. Code, commands, and error messages stay exact. It stays on for the session until you say "stop not-alien". See the [not-alien README](skills/not-alien/README.md) for before/after examples.
+
 ## Install
 
 Install interactively and choose the target agents:
@@ -39,6 +43,13 @@ npx skills add mo-waseem/skills \
   --global
 ```
 
+Install only the not-alien skill:
+
+```bash
+npx skills add mo-waseem/skills \
+  --skill not-alien
+```
+
 For non-interactive installation, add `--yes`.
 
 ## Supported agents
@@ -59,9 +70,9 @@ The `skills` CLI automatically detects installed agents. You can also target one
 Explicit invocation varies by agent:
 
 ```text
-Claude Code: /right-arch
-Codex:       $right-arch
-Hermes:      /right-arch
+Claude Code: /right-arch      /not-alien
+Codex:       $right-arch      $not-alien
+Hermes:      /right-arch      /not-alien
 OpenCode:    Use the right-arch skill.
 ```
 
@@ -77,12 +88,18 @@ The skill can also be selected automatically when a request concerns software ar
 
 ```bash
 npx skills update right-arch
+npx skills update not-alien
 ```
 
 ## Repository structure
 
 ```text
 skills/
+├── not-alien/
+│   ├── README.md
+│   ├── SKILL.md
+│   └── agents/
+│       └── openai.yaml
 └── right-arch/
     ├── SKILL.md
     └── agents/
