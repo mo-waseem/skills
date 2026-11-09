@@ -114,6 +114,7 @@ claude-plugins/
     └── skills/not-alien/SKILL.md
 skills/
 ├── not-alien/
+│   ├── INSTALL.md
 │   ├── README.md
 │   ├── SKILL.md
 │   └── agents/

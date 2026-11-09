@@ -6,19 +6,13 @@ AI agents often write like aliens: long sentences, rare words, and polite filler
 
 ## Install
 
-Copy and paste one of these prompts into your AI agent.
-
-**Claude Code, on in every session:**
+Copy and paste this prompt into your AI agent:
 
 ```text
-Install the not-alien plugin from https://github.com/mo-waseem/skills and turn on always-on mode. Run `claude plugin marketplace add mo-waseem/skills`, then `claude plugin install not-alien@mo-waseem-skills`, then `touch ~/.claude/.not-alien-always`. Tell me to restart Claude Code.
+Install not-alien by following https://github.com/mo-waseem/skills/blob/main/skills/not-alien/INSTALL.md
 ```
 
-**Any agent, on demand:**
-
-```text
-Install the not-alien skill from https://github.com/mo-waseem/skills. Run `npx skills add mo-waseem/skills --skill not-alien` for this agent, or copy the `skills/not-alien` folder into this agent's skills folder.
-```
+The agent asks whether you want it always-on or on demand. See [INSTALL.md](INSTALL.md) for every step.
 
 Or run the command yourself:
 
