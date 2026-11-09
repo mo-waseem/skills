@@ -6,6 +6,14 @@ AI agents often write like aliens: long sentences, rare words, and polite filler
 
 ## Install
 
+Copy and paste this prompt into your AI agent:
+
+```text
+Install the not-alien skill from https://github.com/mo-waseem/skills. Run `npx skills add mo-waseem/skills --skill not-alien` for this agent, or copy the `skills/not-alien` folder into this agent's skills folder.
+```
+
+Or run the command yourself:
+
 ```bash
 npx skills add mo-waseem/skills --skill not-alien
 ```
