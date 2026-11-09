@@ -1,0 +1,11 @@
+{
+  "name": "not-alien",
+  "displayName": "not-alien",
+  "version": "0.1.0",
+  "description": "Make Claude reply in plain, simple, short English. On demand with /not-alien, or always on with a flag file.",
+  "author": {
+    "name": "Waseem Kntar",
+    "url": "https://github.com/mo-waseem"
+  },
+  "keywords": ["plain-english", "concise", "output-style"]
+}

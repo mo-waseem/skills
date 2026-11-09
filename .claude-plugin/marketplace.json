@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "mo-waseem-skills",
+  "description": "Mo Waseem's reusable skills for AI coding agents.",
+  "owner": {
+    "name": "Waseem Kntar"
+  },
+  "plugins": [
+    {
+      "name": "not-alien",
+      "description": "Plain, short English replies. On demand with /not-alien, or always on.",
+      "source": "./claude-plugins/not-alien",
+      "category": "productivity"
+    }
+  ]
+}
