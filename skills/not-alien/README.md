@@ -29,7 +29,7 @@ Hermes:      /not-alien
 OpenCode:    Use the not-alien skill.
 ```
 
-It stays on for the rest of the session. Say "stop not-alien" or "normal mode" to turn it off.
+Once on, it shapes every reply, even when you don't ask for short answers. Say "don't use not-alien" to turn it off.
 
 ## Always-on (Claude Code)
 
@@ -49,7 +49,7 @@ touch ~/.claude/.not-alien-always
 Restart Claude Code. A hook now loads the rules at the start of every session.
 
 - Turn always-on off: `rm ~/.claude/.not-alien-always`
-- Turn it off for one session: say "stop not-alien"
+- Turn it off for one session: say "don't use not-alien"
 - `/not-alien` still works on demand when the flag file is not there
 
 If you installed with `npx` before, remove that copy so `/not-alien` isn't listed twice:

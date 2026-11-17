@@ -57,7 +57,7 @@ No `npx`? Clone the repo and copy the `skills/not-alien` folder into the agent's
 ## 4. Tell the user
 
 - Restart the agent to load the skill.
-- On demand: turn it on with `/not-alien` (Codex: `$not-alien`). Say "stop not-alien" to turn it off.
+- On demand: turn it on with `/not-alien` (Codex: `$not-alien`). Say "don't use not-alien" to turn it off.
 - Always-on: turn it off with `rm ~/.claude/.not-alien-always`.
 
 ## Remove
